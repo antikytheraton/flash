@@ -17,7 +17,7 @@ with open("./morse.json", 'r') as f:
 try:
     text = sys.argv[1].lower()
 except:
-    print("Usege: python3 flash.py \"message\""
+    print("Usege: python3 flash.py \"message\"")
 keys = morse.keys()
 
 for ch in text:
@@ -27,7 +27,7 @@ for ch in text:
         if c == '.':
             light()
             sleep(0.2)
-            dark();
+            dark()
         elif c == '-':
             light()
             sleep(1)
